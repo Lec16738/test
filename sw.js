@@ -2,7 +2,7 @@
    缓存优先 + 导航请求网络优先（保证版本更新）。
    每次更新资源后，请把 CACHE_NAME 的版本号 +1（v1 → v2），
    已安装的客户端会自动拉取新版本并清理旧缓存。 */
-const CACHE_NAME = 'lab-copilot-v1';
+const CACHE_NAME = 'lab-copilot-v2';
 const ASSETS = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (event) => {

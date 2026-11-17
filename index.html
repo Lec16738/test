@@ -760,7 +760,7 @@ const I18N = {
     'home.title1': '把一张',
     'home.title2': '手绘表格',
     'home.title3': '变成一份规范实验报告',
-    'home.desc': '上传手绘数据表的照片，系统自动还原表格结构、映射物理量、按实验公式推理计算，并完成量纲、有效数字与合理区间校验。中英文报告一键导出，格式对齐纽黑文学院实验报告模板。',
+    'home.desc': '上传手绘数据表的照片，系统自动还原表格结构、映射物理量、按实验公式推理计算，并完成量纲、有效数字与合理区间校验。中英文报告一键导出，格式遵循标准大学物理实验报告规范。',
     'home.cta.start': '开始一次实验',
     'home.cta.library': '查看模板库',
     'home.stat.exp': '内置实验',
@@ -962,9 +962,9 @@ const I18N = {
     'report.meta.date': '提交时间',
     'report.meta.instructor': '指导教师',
     'report.meta.edit': '编辑封面信息',
-    'report.meta.schoolVal': '纽黑文信息工程学院',
-    'report.meta.majorVal': '通信工程',
-    'report.meta.classVal': '通信工程 2503',
+    'report.meta.schoolVal': '____________',
+    'report.meta.majorVal': '____________',
+    'report.meta.classVal': '____________',
     'report.meta.course': '大学物理实验 AⅡ',
     'report.meta.courseEn': 'College Physics Experiments AⅡ',
     'report.section.title': '实验名称',
@@ -1277,7 +1277,7 @@ const I18N = {
     'home.title1': 'Turn a',
     'home.title2': 'hand-drawn table',
     'home.title3': 'into a formal lab report',
-    'home.desc': 'Upload a photo of your handwritten data sheet. Lab Copilot reconstructs the table, maps cells to physical quantities, computes derived values from the experiment formulas, and checks dimensions, significant figures, and plausible ranges. Export bilingual reports aligned with the XUPT–UNH laboratory template.',
+    'home.desc': 'Upload a photo of your handwritten data sheet. Lab Copilot reconstructs the table, maps cells to physical quantities, computes derived values from the experiment formulas, and checks dimensions, significant figures, and plausible ranges. Export bilingual reports following standard university physics lab-report conventions.',
     'home.cta.start': 'Start an experiment',
     'home.cta.library': 'Browse templates',
     'home.stat.exp': 'built-in experiments',
@@ -1479,9 +1479,9 @@ const I18N = {
     'report.meta.date': 'Date',
     'report.meta.instructor': 'Instructor',
     'report.meta.edit': 'Edit cover details',
-    'report.meta.schoolVal': 'XUPT–UNH College of Information Engineering',
-    'report.meta.majorVal': 'Telecommunication Engineering',
-    'report.meta.classVal': 'EE 2503',
+    'report.meta.schoolVal': '____________',
+    'report.meta.majorVal': '____________',
+    'report.meta.classVal': '____________',
     'report.meta.course': '大学物理实验 AⅡ',
     'report.meta.courseEn': 'College Physics Experiments AⅡ',
     'report.section.title': 'Report title',
@@ -3607,7 +3607,7 @@ const SECTION_LIBRARY = {
 const BUILTIN_TEMPLATES = [
   {
     id: 'tpl-unh-en',
-    name: { zh: '英文 UNH 标准模板', en: 'UNH Standard (English)' },
+    name: { zh: '英文标准实验报告模板', en: 'Standard English Report' },
     lang: 'en', source: 'builtin', version: '1.0.0', updated: '2026-11-16', appliesTo: 'all',
     desc: { zh: '对齐《College Physics Experiments AⅡ》英文报告模板', en: 'Aligned with the College Physics Experiments AII report template' },
     sections: ['title', 'objective', 'instruments', 'principle', 'data', 'calc', 'processing', 'error', 'conclusion', 'questions', 'original', 'references', 'confirm']
@@ -6622,7 +6622,7 @@ function generateDemoImage() {
   ctx.fillText(L(exp.title), 150, 158);
   ctx.font = '16px "Segoe UI", sans-serif';
   ctx.fillStyle = '#98a2b3';
-  ctx.fillText((state.lang === 'zh' ? '姓名：___________   班级：EE 2503   日期：' : 'Name: ___________   Class: EE 2503   Date: ') + nowStamp(), 150, 190);
+  ctx.fillText((state.lang === 'zh' ? '姓名：___________   班级：________   日期：' : 'Name: ___________   Class: ________   Date: ') + nowStamp(), 150, 190);
 
   const left = 150, top = 232, colW = [80, 300, 250, 140];
   const rows = Math.min((exp.inputs || []).length, 8);
