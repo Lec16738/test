@@ -1,0 +1,17 @@
+{
+  "name": "实验小助手 · Lab Copilot",
+  "short_name": "实验小助手",
+  "description": "物理实验报告智能生成系统：拍照识别手绘表格，自动计算与校验，一键生成中英文规范实验报告。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fbf9f4",
+  "theme_color": "#16305c",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
